@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Water Gun</title>
+</head>
+<body style="text-align:center; font-family:Arial; margin-top:50px;">
+
+    <h1>Snake 🐍 Water 💧 Gun 🔫</h1>
+
+    <form method="POST">
+        <button name="choice" value="snake">Snake</button>
+        <button name="choice" value="water">Water</button>
+        <button name="choice" value="gun">Gun</button>
+    </form>
+
+    {% if result %}
+        <h2>Computer chose: {{ computer_choice }}</h2>
+        <h2>{{ result }}</h2>
+    {% endif %}
+
+</body>
+</html>
